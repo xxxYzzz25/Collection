@@ -1,0 +1,105 @@
+[
+  {
+    "ID": 1,
+    "Title": "Week1 - Todo List",
+    "Demo": "https://bit.ly/2Nj3FWN",
+    "Design": "https://bit.ly/2HfaR2M",
+    "FinishDate": "2018/6/7",
+    "Github": "https://github.com/ItsMeKevin1227/TheF2E/tree/master/01TodoList",
+    "SkillTag": ["Pug", "Scss", "Vue.js"],
+    "IsFinish": true,
+    "BgImg": "./images/F2E_01.png",
+    "PracticeTag": "Pug"
+  },
+  {
+    "ID": 2,
+    "Title": "Week2 - Filter",
+    "Demo": "https://bit.ly/2zHpcX1",
+    "Design": "https://bit.ly/2xWPXWN",
+    "FinishDate": "2018/6/14",
+    "Github": "https://github.com/ItsMeKevin1227/TheF2E/tree/master/02Filter",
+    "SkillTag": ["Scss", "Vue.js", "Vue-Router", "VueX"],
+    "IsFinish": true,
+    "BgImg": "./images/F2E_02.png",
+    "PracticeTag": "VueX"
+  },
+  {
+    "ID": 3,
+    "Title": "Week3 - Admin Order",
+    "Demo": "https://bit.ly/2KYah06",
+    "Design": "http://bit.ly/2tdOhm9",
+    "FinishDate": "2018/6/22",
+    "Github":
+      "https://github.com/ItsMeKevin1227/TheF2E/tree/master/03AdminOrder",
+    "SkillTag": ["Pug", "Scss", "Vue.js", "Vue-Router", "V-Charts"],
+    "IsFinish": true,
+    "BgImg": "./images/F2E_03.png",
+    "PracticeTag": "V-Charts"
+  },
+  {
+    "ID": 4,
+    "Title": "Week4 - Product Gallery",
+    "Demo": "https://bit.ly/2JpCyah ",
+    "Design": "http://bit.ly/2lxMFQC",
+    "FinishDate": "2018/7/1",
+    "Github":
+      "https://github.com/ItsMeKevin1227/TheF2E/tree/master/04ProductGall",
+    "SkillTag": ["Scss"],
+    "IsFinish": true,
+    "BgImg": "./images/F2E_04.png",
+    "PracticeTag": "Grid"
+  },
+  {
+    "ID": 5,
+    "Title": "Week5 - ComicViewer",
+    "Demo": "https://bit.ly/2LbvNxE",
+    "Design": "http://bit.ly/2KBBjWF",
+    "FinishDate": "2018/7/15",
+    "Github":
+      "https://github.com/ItsMeKevin1227/TheF2E/tree/master/05ComicViewer",
+    "SkillTag": ["Scss", "Vue.js", "Vue-Router"],
+    "IsFinish": true,
+    "BgImg": "./images/F2E_05.png",
+    "PracticeTag": "Vue-Router"
+  },
+  {
+    "ID": 6,
+    "Title": "Week6 - Form Validation",
+    "Demo": "https://bit.ly/2NS9N9q",
+    "Design": "http://bit.ly/2udrg3l",
+    "FinishDate": "2018/7/13",
+    "Github":
+      "https://github.com/ItsMeKevin1227/TheF2E/tree/master/06Validation",
+    "SkillTag": ["Scss", "Vue.js", "Vue-Router", "Vee-Validate"],
+    "IsFinish": true,
+    "BgImg": "../images/F2E_06.png",
+    "PracticeTag": "Vee-Validate"
+  },
+  {
+    "ID": 8,
+    "Title": "Week8 - ParallaxScrolling",
+    "Demo": "https://bit.ly/2Adj49k",
+    "Design": "http://bit.ly/2uX1m47",
+    "FinishDate": "2018/07/28",
+    "Github":
+      "https://github.com/ItsMeKevin1227/TheF2E/tree/master/08ParallaxScrolling",
+    "SkillTag": ["Vue.js", "Vue-Router", "TweenMax", "TweenLineMax"],
+    "IsFinish": true,
+    "BgImg": "./images/F2E_08.png",
+    "PracticeTag": "TweenMax"
+  },
+  {
+    "ID": 9,
+    "Title": "Week9 - SkillTree",
+    "Demo": "http://itsmekevin1227.nctu.me/09_F2E_SkillTree/#/",
+    "Design":
+      "https://xd.adobe.com/spec/912f916f-0b05-49ae-66e8-b42b299c19b7-e71e/",
+    "FinishDate": "2018/08/02",
+    "Github":
+      "https://github.com/ItsMeKevin1227/TheF2E/tree/master/09SkillTree",
+    "SkillTag": ["Vue.js", "Vue-Router", "Scss"],
+    "IsFinish": true,
+    "BgImg": "./images/F2E_09.png",
+    "PracticeTag": "Vue.js"
+  }
+]

@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700i,900');
+$blk: #000;
+$wht: #fff;
+$Main-Color: #50e3c2;
+
+%rbtBlk {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+}
+
+%rbtRglr {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+%rbtItlc {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 24px;
+}
+
+// 計算影子位置
+@mixin fadeTitle($top, $left, $transform) {
+  @extend %rbtBlk;
+  @if ($top < 0) or ($top > 200) {
+    $top: $top - 15px;
+  } @else {
+    $top: $top + 15px;
+  }
+  @if ($transform != 0deg) {
+    $left: $left - 30;
+  }
+  &::before {
+    color: rgba(0, 0, 0, 0.3);
+    content: attr(data-text); // dataset的內容
+    position: absolute;
+    top: $top;
+    left: $left + 0px; //單位變換
+    height: 20px;
+    overflow: hidden;
+    transform: rotate($transform);
+  }
+  &::after {
+    color: rgba(0, 0, 0, 0.1);
+    content: attr(data-text); // dataset的內容
+    position: absolute;
+    top: $top - 10px;
+    left: $left + 0px; //單位變換
+    height: 14px;
+    overflow: hidden;
+    transform: rotate($transform);
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(8, 120px);
+  grid-auto-rows: minmax(100px, auto);
+  padding: 32px;
+}
+
+.logo {
+  grid-column: 4 / 6;
+  grid-row: 1 / 2;
+  align-self: start;
+  text-align: center;
+  > h1 {
+    width: 131px;
+    margin: 0 auto;
+    @extend %rbtBlk;
+    background-color: $blk;
+    color: $wht;
+    padding: 1.1px 0;
+    font-size: 20px;
+  }
+}
+
+.header {
+  align-self: end;
+  grid-column: 3 / 7;
+  grid-row: 1 / 2;
+  text-align: center;
+  > h2 {
+    width: 419px;
+    margin: 0 auto;
+    @extend %rbtBlk;
+    font-size: 72px;
+  }
+}
+
+.sqrStyle {
+  width: 240px;
+  height: 200px;
+  border: 20px solid $Main-Color;
+}
+
+.linBlzrSqr {
+  grid-column: 3 / 6;
+  grid-row: 2 / 5;
+  padding: 50px 60px;
+  z-index: -100;
+}
+
+.linenBlazer {
+  grid-column: 1 / 5;
+  grid-row: 3 / 7;
+  background: url(../img/linenblazer.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  @include fadeTitle(-15, 0, 0deg);
+  :nth-child(1) {
+    position: absolute;
+    top: -15px;
+    left: 0;
+  }
+  :nth-child(2) {
+    position: absolute;
+    bottom: 22px;
+    right: -74px;
+    @extend %rbtItlc;
+    transform: rotate(90deg);
+  }
+}
+
+.pattern1 {
+  grid-column: 1 / 4;
+  grid-row: 6 / 8;
+  padding: 50px 60px;
+}
+
+.pattern {
+  width: 240px;
+  height: 100px;
+  background: url(../img/pattern.svg) repeat-x;
+  position: absolute;
+}
+
+.numStyle {
+  @extend %rbtBlk;
+}
+
+.num1 {
+  grid-column: 1 / 2;
+  grid-row: 7 / 8;
+}
+
+.freeLift {
+  grid-column: -2 / -4;
+  grid-row: 4 / 6;
+  background: url(../img/freelift.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+  @include fadeTitle(220, 120, 0deg);
+  :nth-child(1) {
+    position: absolute;
+    top: 220px;
+    left: 120px;
+    z-index: 1;
+  }
+  :nth-child(2) {
+    position: absolute;
+    left: -13px;
+    top: -23px;
+    @extend %rbtItlc;
+  }
+}
+
+.frelftSqrFill {
+  grid-column: -1 / -4;
+  grid-row: 3 / 6;
+  padding: 50px 60px;
+  z-index: -100;
+}
+
+.sqrFill {
+  background-color: $Main-Color;
+}
+
+.frelftSqr {
+  grid-column: -1 / -3;
+  grid-row: 3 / 5;
+  z-index: -200;
+  position: relative;
+  span {
+    position: absolute;
+    right: -20px;
+    top: -20px;
+  }
+}
+
+.superSkinny {
+  grid-column: 1 / 5;
+  grid-row: 9 / 11;
+  background: url(../img/superskinny.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  @include fadeTitle(-50, 145, 0deg);
+  :nth-child(1) {
+    position: absolute;
+    top: -50px;
+    left: 145px;
+    z-index: 1;
+  }
+  :nth-child(2) {
+    @extend %rbtItlc;
+    position: absolute;
+    bottom: -25px;
+    left: 32px;
+  }
+}
+
+.supSknySqrFill {
+  grid-column: 1 / 3;
+  grid-row: 8 / 11;
+  z-index: -100;
+  margin: auto 0;
+}
+
+.supSknySqr {
+  grid-column: 3 / 6;
+  grid-row: 9 / 12;
+  padding: 50px 60px;
+  z-index: -100;
+  position: relative;
+  span {
+    position: absolute;
+    bottom: 50px;
+    right: 60px;
+  }
+}
+
+.denim {
+  grid-column: -1 / -3;
+  grid-row: 9 / 13;
+  background: url(../img/denim.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  @include fadeTitle(50, -95, -90deg);
+  &::before {
+    left: -123px;
+  }
+  &::after {
+    top: 68px;
+    left: -135px;
+  }
+  :nth-child(1) {
+    position: absolute;
+    top: 50px;
+    left: -95px;
+    transform: rotate(-90deg);
+  }
+  :nth-child(2) {
+    position: absolute;
+    @extend %rbtItlc;
+    top: -85px;
+    right: -10px;
+    transform: rotate(90deg);
+  }
+}
+
+.denimSqr {
+  grid-column: -1 / -4;
+  grid-row: 8 / 10;
+  padding: 0 60px;
+  z-index: -100;
+}
+
+.pattern2 {
+  grid-column: -1 / -3;
+  grid-row: 12 / 14;
+  padding: 50px 0;
+  position: relative;
+  span {
+    position: absolute;
+    left: -56px;
+  }
+}
+
+.sweatshirts {
+  grid-column: 3 / 5;
+  grid-row: 13 / 15;
+  background: url(../img/sweater.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+.pattern3 {
+  grid-column: 1 / 4;
+  grid-row: 12 / 14;
+  padding: 50px 60px;
+  position: relative;
+  @include fadeTitle(152, 5, 0deg);
+  &::before {
+    top: 137px;
+    z-index: 1;
+  }
+  &::after {
+    top: 128px;
+  }
+  :nth-child(1) {
+    position: absolute;
+    top: 152px;
+    left: 5px;
+  }
+  :nth-child(2) {
+    @extend %rbtItlc;
+    position: absolute;
+    top: 50%;
+    right: -250px;
+  }
+}
+
+.swtShrtSqr {
+  grid-column: 2 / 4;
+  grid-row: 14 / 16;
+  padding: 50px 0;
+  z-index: -100;
+  .sqrStyle {
+    height: 100px;
+    position: relative;
+    :nth-child(1) {
+      position: absolute;
+      top: -20px;
+      left: -20px;
+    }
+  }
+}
+
+.vintageDenim {
+  grid-column: -1 / -5;
+  grid-row: 15 / 19;
+  background: url(../img/vintage.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  @include fadeTitle(-50, 120, 0deg);
+  :nth-child(1) {
+    position: absolute;
+    top: -50px;
+    left: 120px;
+  }
+  :nth-child(2) {
+    @extend %rbtItlc;
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.vntgDnmSqr {
+  grid-column: -1 / -5;
+  grid-row: 17 / 20;
+  padding: 50px 0;
+  z-index: -100;
+  .sqrStyle {
+    width: 480px;
+  }
+}
+
+.vntgDnmSqrFill {
+  grid-column: -3 / -6;
+  grid-row: 17 / 19;
+  padding: 0 60px;
+  z-index: -100;
+  position: relative;
+  :nth-child(1) {
+    position: absolute;
+    top: -50px;
+  }
+}
+
+.edition {
+  grid-column: 1 / 3;
+  grid-row: 17 / 21;
+  background: url(../img/edition.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  @include fadeTitle(65, 165, 90deg);
+  &::before {
+    top: 78px;
+    left: 200px;
+  }
+  &::after {
+    top: 81px;
+    left: 212px;
+  }
+  :nth-child(1) {
+    position: absolute;
+    top: 65px;
+    left: 170px;
+    transform: rotate(90deg);
+  }
+  :nth-child(2) {
+    @extend %rbtItlc;
+    position: absolute;
+    top: -24px;
+  }
+}
+
+.edtnSqr {
+  grid-column: 1 / 4;
+  grid-row: 16 / 21;
+  padding: 50px 60px;
+  z-index: -100;
+  .sqrStyle {
+    height: 400px;
+  }
+}
+
+.edtnSqrFill {
+  grid-column: 2 / 4;
+  grid-row: 19 / 21;
+  position: relative;
+  z-index: -100;
+  :nth-child(1) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

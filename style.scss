@@ -1,0 +1,147 @@
+$background: #e7edef;
+$mainColor: #0095d9;
+$special: #fabf14;
+$fontColorW: #f7fcfe;
+$fontColorB: #081941;
+$hoverColor: #1853b5;
+$title: 42px;
+body {
+  background-color: $background;
+  div {
+    font-family: Tahoma, Microsoft JhengHei;
+  }
+  a {
+    display: block;
+    padding: 10px 16px;
+    background-color: $special;
+    text-decoration: none;
+    color: $fontColorW;
+    letter-spacing: 1px;
+    &:hover {
+      color: $hoverColor;
+    }
+  }
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $mainColor;
+  color: $fontColorW;
+  padding: 40px 0;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2),
+    inset 1px 2px 10px rgba(0, 0, 0, 0.2);
+  h1 {
+    display: block;
+    font-size: $title;
+    text-align: center;
+    line-height: 1;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  a {
+    margin-right: 20px;
+    margin-left: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.28);
+  }
+  .bgImg {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    background-image: url(../img/Certificate.png);
+    background-size: cover;
+    background-position: center top;
+    width: 22%;
+    padding-top: 18%;
+  }
+}
+#container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  color: $fontColorB;
+  .listItem {
+    width: 20%;
+    background-color: $fontColorW;
+    margin: 40px 30px;
+    padding: 16px 24px;
+    font-size: 1em;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.28);
+    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) all;
+    letter-spacing: 1px;
+    &:hover {
+      transform: translate(-3px, -3px);
+      transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) all;
+      box-shadow: 0 7px 11px 0 rgba(0, 0, 0, 0.23),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    &::before {
+      position: absolute;
+      display: block;
+      background-color: $special;
+      width: 7px;
+      height: 1em;
+      padding: 2px;
+      content: '';
+      top: -6px;
+      left: -8px;
+      transform: rotate(15deg);
+      z-index: -1;
+    }
+    &::after {
+      content: attr(data-tag);
+      position: absolute;
+      top: -10px;
+      width: auto;
+      height: auto;
+      left: -10px;
+      display: block;
+      background-color: $special;
+      padding: 2px 8px;
+      color: $fontColorW;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    }
+    > h3 {
+      margin: 0;
+    }
+    > div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .image {
+      justify-content: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center top;
+      width: 100%;
+      margin: 0 auto 30px;
+      height: 300px;
+    }
+    span {
+      color: $mainColor;
+      word-wrap: break-word;
+    }
+    a {
+      background-color: $mainColor;
+      padding: 6px 10px;
+      color: $fontColorW;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    .listItem {
+      width: 100%;
+    }
+  }
+}

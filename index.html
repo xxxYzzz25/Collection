@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+  <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' />
+  <link rel="stylesheet"
+        href="./css/style.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js'></script>
+  <title>ItsMeKevin1227 - 精神時光屋作品集</title>
+</head>
+
+<body>
+  <header>
+    <h1>
+      The F2E - 前端修練精神時光屋
+    </h1>
+    <div>
+      <a target="_blank"
+         href="https://github.com/ItsMeKevin1227">我的Github</a>
+      <a target="_blank"
+         href="https://github.com/hexschool/TheF2E">活動說明</a>
+    </div>
+  </header>
+
+  <div id="container"></div>
+  <script>
+    let container = document.querySelector('#container')
+    axios.get('./CollectionList.json')
+      .then(res => {
+        for (let i = 0; i < res.data.length; i++) {
+          if (res.data[i].IsFinish) {
+            container.innerHTML += `
+            <div id="listItem${i + 1}"
+              class="listItem"
+              data-tag="${res.data[i].PracticeTag}">
+              <div class="image" style="background-image: url('${res.data[i].BgImg}')"></div>
+              <h3>${res.data[i].Title}</h3>
+              <p>使用技術: <br><span>${res.data[i].SkillTag.join(', ')}</span></p>
+              <p>完成時間: <span>${res.data[i].FinishDate}</span></p>
+              <div>
+                <a target="_blank" href="${res.data[i].Demo}">DEMO</a>
+                <a target="_blank" href="${res.data[i].Design}">Design</a>
+                <a target="_blank" href="${res.data[i].Github}">Github</a>
+              </div>
+            </div>`
+          }
+        }
+      })
+  </script>
+</body>
+
+</html>
