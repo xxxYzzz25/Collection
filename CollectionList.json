@@ -3,7 +3,7 @@
     "ID": 1,
     "Title": "F2E Week1 - Todo List",
     "Category": "F2E",
-    "Demo": "http://xxxzz25.nctu.me/F2E_01_Todolist",
+    "Demo": "http://xxxzz25.nctu.me/F2E_01_TodoList",
     "Design": "https://bit.ly/2HfaR2M",
     "Github": "https://github.com/xxxzz25/F2E/tree/master/01TodoList",
     "SkillTag": ["Pug", "Scss", "Vue.js"],
