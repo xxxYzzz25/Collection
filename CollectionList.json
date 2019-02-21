@@ -1,105 +1,118 @@
 [
   {
     "ID": 1,
-    "Title": "Week1 - Todo List",
-    "Demo": "https://bit.ly/2Nj3FWN",
+    "Title": "F2E Week1 - Todo List",
+    "Category": "F2E",
+    "Demo": "http://xxxzz25.nctu.me/F2E_01_Todolist",
     "Design": "https://bit.ly/2HfaR2M",
-    "FinishDate": "2018/6/7",
-    "Github": "https://github.com/ItsMeKevin1227/TheF2E/tree/master/01TodoList",
+    "Github": "https://github.com/xxxzz25/F2E/tree/master/01TodoList",
     "SkillTag": ["Pug", "Scss", "Vue.js"],
-    "IsFinish": true,
-    "BgImg": "./images/F2E_01.png",
+    "Img": "./images/F2E_01.png",
     "PracticeTag": "Pug"
   },
   {
     "ID": 2,
-    "Title": "Week2 - Filter",
-    "Demo": "https://bit.ly/2zHpcX1",
+    "Title": "F2E Week2 - Filter",
+    "Category": "F2E",
+    "Demo": "http://xxxzz25.nctu.me/F2E_02_Filter",
     "Design": "https://bit.ly/2xWPXWN",
-    "FinishDate": "2018/6/14",
-    "Github": "https://github.com/ItsMeKevin1227/TheF2E/tree/master/02Filter",
+    "Github": "https://github.com/xxxzz25/F2E/tree/master/02Filter",
     "SkillTag": ["Scss", "Vue.js", "Vue-Router", "VueX"],
-    "IsFinish": true,
-    "BgImg": "./images/F2E_02.png",
+    "Img": "./images/F2E_02.png",
     "PracticeTag": "VueX"
   },
   {
     "ID": 3,
-    "Title": "Week3 - Admin Order",
-    "Demo": "https://bit.ly/2KYah06",
+    "Title": "F2E Week3 - Admin Order",
+    "Category": "F2E",
+    "Demo": "http://xxxzz25.nctu.me/F2E_03_Order",
     "Design": "http://bit.ly/2tdOhm9",
-    "FinishDate": "2018/6/22",
     "Github":
-      "https://github.com/ItsMeKevin1227/TheF2E/tree/master/03AdminOrder",
+      "https://github.com/xxxzz25/F2E/tree/master/03Order",
     "SkillTag": ["Pug", "Scss", "Vue.js", "Vue-Router", "V-Charts"],
-    "IsFinish": true,
-    "BgImg": "./images/F2E_03.png",
+    "Img": "./images/F2E_03.png",
     "PracticeTag": "V-Charts"
   },
   {
     "ID": 4,
-    "Title": "Week4 - Product Gallery",
-    "Demo": "https://bit.ly/2JpCyah ",
+    "Title": "F2E Week4 - Product Gallery",
+    "Category": "F2E",
+    "Demo": "http://xxxzz25.nctu.me/F2E_04_Gallery",
     "Design": "http://bit.ly/2lxMFQC",
-    "FinishDate": "2018/7/1",
     "Github":
-      "https://github.com/ItsMeKevin1227/TheF2E/tree/master/04ProductGall",
+      "https://github.com/xxxzz25/F2E/tree/master/04Gallery",
     "SkillTag": ["Scss"],
-    "IsFinish": true,
-    "BgImg": "./images/F2E_04.png",
+    "Img": "./images/F2E_04.png",
     "PracticeTag": "Grid"
   },
   {
     "ID": 5,
-    "Title": "Week5 - ComicViewer",
-    "Demo": "https://bit.ly/2LbvNxE",
+    "Title": "F2E Week5 - ComicViewer",
+    "Category": "F2E",
+    "Demo": "http://xxxzz25.nctu.me/F2E_05_Comic",
     "Design": "http://bit.ly/2KBBjWF",
-    "FinishDate": "2018/7/15",
     "Github":
-      "https://github.com/ItsMeKevin1227/TheF2E/tree/master/05ComicViewer",
+      "https://github.com/xxxzz25/F2E/tree/master/05ComicViewer",
     "SkillTag": ["Scss", "Vue.js", "Vue-Router"],
-    "IsFinish": true,
-    "BgImg": "./images/F2E_05.png",
+    "Img": "./images/F2E_05.png",
     "PracticeTag": "Vue-Router"
   },
   {
     "ID": 6,
-    "Title": "Week6 - Form Validation",
-    "Demo": "https://bit.ly/2NS9N9q",
+    "Title": "F2E Week6 - Form Validation",
+    "Category": "F2E",
+    "Demo": "http://xxxzz25.nctu.me/F2E_06_Validation",
     "Design": "http://bit.ly/2udrg3l",
-    "FinishDate": "2018/7/13",
     "Github":
-      "https://github.com/ItsMeKevin1227/TheF2E/tree/master/06Validation",
+      "https://github.com/xxxzz25/F2E/tree/master/06Validation",
     "SkillTag": ["Scss", "Vue.js", "Vue-Router", "Vee-Validate"],
-    "IsFinish": true,
-    "BgImg": "../images/F2E_06.png",
+    "Img": "../images/F2E_06.png",
     "PracticeTag": "Vee-Validate"
   },
   {
     "ID": 8,
-    "Title": "Week8 - ParallaxScrolling",
-    "Demo": "https://bit.ly/2Adj49k",
+    "Title": "F2E Week8 - ParallaxScrolling",
+    "Category": "F2E",
+    "Demo": "http://xxxzz25.nctu.me/F2E_08_Scrolling",
     "Design": "http://bit.ly/2uX1m47",
-    "FinishDate": "2018/07/28",
     "Github":
-      "https://github.com/ItsMeKevin1227/TheF2E/tree/master/08ParallaxScrolling",
+      "https://github.com/xxxzz25/F2E/tree/master/08Scrolling",
     "SkillTag": ["Vue.js", "Vue-Router", "TweenMax", "TweenLineMax"],
-    "IsFinish": true,
-    "BgImg": "./images/F2E_08.png",
+    "Img": "./images/F2E_08.png",
     "PracticeTag": "TweenMax"
   },
   {
     "ID": 9,
-    "Title": "Week9 - SkillTree",
-    "Demo": "http://itsmekevin1227.nctu.me/09_F2E_SkillTree/#/",
+    "Title": "F2E Week9 - SkillTree",
+    "Category": "F2E",
+    "Demo": "http://xxxzz25.nctu.me/F2E_09_SkillTree",
     "Design":
       "https://xd.adobe.com/spec/912f916f-0b05-49ae-66e8-b42b299c19b7-e71e/",
-    "FinishDate": "2018/08/02",
     "Github":
-      "https://github.com/ItsMeKevin1227/TheF2E/tree/master/09SkillTree",
+      "https://github.com/xxxzz25/F2E/tree/master/09SkillTree",
     "SkillTag": ["Vue.js", "Vue-Router", "Scss"],
-    "IsFinish": true,
-    "BgImg": "./images/F2E_09.png",
-    "PracticeTag": "Vue.js"
+    "Img": "./images/F2E_09.png",
+    "PracticeTag": "Vue-Router"
+  },
+  {
+    "ID": 10,
+    "Title": "III - Personal",
+    "Category": "III",
+    "Demo": "http://140.115.236.72/demo-personal/BD103/web/C1700340/index.html",
+    "Design": "",
+    "Github": "",
+    "SkillTag": ["CSS", "RWD"],
+    "Img": "./images/iii_personal.png"
+  },
+  {
+    "ID": 11,
+    "Title": "III - Group",
+    "Category": "III",
+    "Demo": "http://140.115.236.72/demo-projects/BD103/BD103G2/",
+    "Design": "",
+    "Github":
+      "https://github.com/utakatanotsuki/meow_project",
+      "SkillTag": ["php", "Java Script", "Scss"],
+    "Img": "./images/iii_group.png"
   }
 ]
