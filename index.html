@@ -25,7 +25,10 @@
         <h3>F2E<a target="_blank" href="https://github.com/hexschool/TheF2E">活動說明</a></h3>
       </div>
       <div class="section section2">
-        <h3>Others</h3>
+        <h3>III</h3>
+      </div>
+      <div class="section section3">
+        <h3>OTHERS</h3>
       </div>
     </div>
 
@@ -64,6 +67,23 @@
                 <p>使用技術: <br><span>${res.data[i].SkillTag.join(', ')}</span></p>
                 <div>
                   <a target="_blank" href="${res.data[i].Demo}">DEMO</a>
+                  <a target="_blank" href="${res.data[i].Github}">Github</a>
+                </div>
+              </div>
+              <div class="contentbg"></div>
+            </div>`;
+          }else if(res.data[i].Category == 'Others'){
+            section2.innerHTML += `
+            <div class="itemwrap">
+              <div id="listItem${i + 1}"
+                class="listItem"
+                data-tag="${res.data[i].PracticeTag}">
+                <div class="image" style="background-image: url('${res.data[i].Img}')"></div>
+                <h3>${res.data[i].Title}</h3>
+                <p>使用技術: <br><span>${res.data[i].SkillTag.join(', ')}</span></p>
+                <div>
+                  <a target="_blank" href="${res.data[i].Demo}">DEMO</a>
+                  <a target="_blank" href="${res.data[i].Github}">Github</a>
                 </div>
               </div>
               <div class="contentbg"></div>

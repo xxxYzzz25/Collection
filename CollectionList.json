@@ -52,7 +52,7 @@
     "Demo": "http://xxxzz25.nctu.me/F2E_05_Comic",
     "Design": "http://bit.ly/2KBBjWF",
     "Github":
-      "https://github.com/xxxzz25/F2E/tree/master/05ComicViewer",
+      "https://github.com/xxxzz25/F2E/tree/master/05Comic",
     "SkillTag": ["Scss", "Vue.js", "Vue-Router"],
     "Img": "./images/F2E_05.png",
     "PracticeTag": "Vue-Router"
@@ -90,7 +90,7 @@
       "https://xd.adobe.com/spec/912f916f-0b05-49ae-66e8-b42b299c19b7-e71e/",
     "Github":
       "https://github.com/xxxzz25/F2E/tree/master/09SkillTree",
-    "SkillTag": ["Vue.js", "Vue-Router", "Scss"],
+    "SkillTag": ["Vue.js", "Scss"],
     "Img": "./images/F2E_09.png",
     "PracticeTag": "Vue-Router"
   },
@@ -114,5 +114,27 @@
       "https://github.com/utakatanotsuki/meow_project",
       "SkillTag": ["php", "Java Script", "Scss"],
     "Img": "./images/iii_group.png"
+  },
+  {
+    "ID": 12,
+    "Title": "牛牛",
+    "Category": "Others",
+    "Demo": "http://xxxzz25.nctu.me/bull",
+    "Design": "",
+    "Github":
+      "https://github.com/xxxzz25/Collection/tree/master/bull",
+      "SkillTag": ["Java Script", "move.js", "Scss"],
+    "Img": "./images/bull.png"
+  },
+  {
+    "ID": 12,
+    "Title": "ShoppingCart",
+    "Category": "Others",
+    "Demo": "http://xxxzz25.nctu.me/shoppingcart/#/admin/customer_order",
+    "Design": "",
+    "Github":
+      "https://github.com/xxxzz25/Collection/tree/master/shoppingcart",
+      "SkillTag": ["Vue.js", "Scss", "vue-axios", "vue-loading-overlay", "Vue-Router"],
+    "Img": "./images/shoppingcart.png"
   }
 ]
