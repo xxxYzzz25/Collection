@@ -35,7 +35,9 @@
     <script>
       let content = document.querySelector('#content'),
         section1 = document.querySelector('.section1'),
-        section2 = document.querySelector('.section2');
+        section2 = document.querySelector('.section2'),
+        section3 = document.querySelector('.section3');
+        
       axios.get('./CollectionList.json').then(res => {
         for (let i = 0; i < res.data.length; i++) {
           if(res.data[i].Category == 'F2E'){
@@ -73,7 +75,7 @@
               <div class="contentbg"></div>
             </div>`;
           }else if(res.data[i].Category == 'Others'){
-            section2.innerHTML += `
+            section3.innerHTML += `
             <div class="itemwrap">
               <div id="listItem${i + 1}"
                 class="listItem"
