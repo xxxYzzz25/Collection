@@ -112,7 +112,7 @@
     "Design": "",
     "Github":
       "https://github.com/utakatanotsuki/meow_project",
-      "SkillTag": ["php", "Java Script", "Scss"],
+    "SkillTag": ["php", "Java Script", "Scss"],
     "Img": "./images/iii_group.png"
   },
   {
@@ -123,18 +123,18 @@
     "Design": "",
     "Github":
       "https://github.com/xxxzz25/Collection/tree/master/bull",
-      "SkillTag": ["Java Script", "move.js", "Scss"],
+    "SkillTag": ["Java Script", "move.js", "Scss"],
     "Img": "./images/bull.png"
   },
   {
     "ID": 13,
     "Title": "ShoppingCart",
     "Category": "Others",
-    "Demo": "http://xxxzz25.nctu.me/shoppingcart/#/admin/customer_order",
+    "Demo": "http://xxxzz25.nctu.me/shoppingcart",
     "Design": "",
     "Github":
       "https://github.com/xxxzz25/Collection/tree/master/shoppingcart",
-      "SkillTag": ["Vue.js", "Scss", "vue-axios", "vue-loading-overlay", "Vue-Router"],
+    "SkillTag": ["Vue.js", "Scss", "vue-axios", "vue-loading-overlay", "Vue-Router"],
     "Img": "./images/shoppingcart.png"
   }
 ]
