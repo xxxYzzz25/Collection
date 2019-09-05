@@ -136,5 +136,16 @@
       "https://github.com/xxxzz25/Collection/tree/master/shoppingcart",
     "SkillTag": ["Vue.js", "Scss", "vue-axios", "vue-loading-overlay", "Vue-Router"],
     "Img": "./images/shoppingcart.png"
+  },
+  {
+    "ID": 14,
+    "Title": "Hero",
+    "Category": "Others",
+    "Demo": "http://xxxzz25.nctu.me/hero",
+    "Design": "",
+    "Github":
+      "https://github.com/xxxzz25/Collection/tree/master/hero",
+    "SkillTag": ["Vue.js", "Scss", "vue-axios", "vue-loading-overlay", "Vue-Router"],
+    "Img": "./images/hero.png"
   }
 ]
