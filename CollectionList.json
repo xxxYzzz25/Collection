@@ -133,7 +133,7 @@
     "Demo": "http://xxxzz25.nctu.me/shoppingcart",
     "Design": "",
     "Github":
-      "https://github.com/xxxzz25/Collection/tree/master/shoppingcart",
+      "https://github.com/xxxzz25/vue-exercise-hex/tree/master/shoppingcart",
     "SkillTag": ["Vue.js", "Scss", "vue-axios", "vue-loading-overlay", "Vue-Router"],
     "Img": "./images/shoppingcart.png"
   },
@@ -144,7 +144,7 @@
     "Demo": "http://xxxzz25.nctu.me/hero",
     "Design": "",
     "Github":
-      "https://github.com/xxxzz25/Collection/tree/master/hero",
+      "https://github.com/xxxzz25/hero",
     "SkillTag": ["Vue.js", "Scss", "vue-axios", "vue-loading-overlay", "Vue-Router"],
     "Img": "./images/hero.png"
   }
